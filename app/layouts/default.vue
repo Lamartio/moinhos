@@ -11,12 +11,7 @@ import { EMAIL_PLACEHOLDER } from '~/constants'
           <NuxtLink to="/" class="text-xl font-bold hover:text-green-200 transition-colors">
             Moinhos Do Dao
           </NuxtLink>
-          <ul class="flex items-center gap-6">
-            <li>
-              <NuxtLink to="/" class="hover:text-green-200 transition-colors">
-                Home
-              </NuxtLink>
-            </li>
+          <ul class="flex items-center gap-6 ">
             <li>
               <NuxtLink to="/activities" class="hover:text-green-200 transition-colors">
                 Activities
