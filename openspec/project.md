@@ -1,7 +1,7 @@
 # Project Context
 
 ## Purpose
-Moinhos is a personal blog and portfolio site built with Nuxt 4. The site showcases content through markdown-based pages and serves as a platform for sharing articles, projects, and personal information.
+Moinhos Do Dao - Eco Quinta is a farm website built with Nuxt 4. The site showcases farm activities through a blog, provides contact information and location, and enables cottage rental bookings for "Boa Vista".
 
 ## Tech Stack
 - **Framework:** Nuxt 4.2.2 (Vue 3.5.25)
@@ -10,7 +10,7 @@ Moinhos is a personal blog and portfolio site built with Nuxt 4. The site showca
 - **UI:** @nuxt/ui 4.2.1
 - **Images:** @nuxt/image 2.0.0
 - **Linting:** @nuxt/eslint with ESLint 9.0
-- **Package Manager:** Bun
+- **Package Manager:** Bun (use `bunx` instead of `npx`)
 
 ## Project Conventions
 
@@ -35,9 +35,11 @@ Moinhos is a personal blog and portfolio site built with Nuxt 4. The site showca
 - Use OpenSpec change proposals for significant features
 
 ## Domain Context
-- "Moinhos" - project name for the portfolio/blog
+- "Moinhos Do Dao - Eco Quinta" - Portuguese eco-farm offering activities and cottage rental
+- "Boa Vista" - cottage available for short-term rental with date-based booking
 - Content is written in Markdown with embedded Vue components
-- Target audience: visitors interested in the author's work and writing
+- Target audience: tourists and visitors interested in eco-farm experiences
+- All booking/contact forms use mailto: links (no server-side processing)
 
 ## Important Constraints
 - **Static hosting only:** No server-side runtime; site must be fully static
