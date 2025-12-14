@@ -47,12 +47,6 @@ function getGoogleMapsUrl(coords: { lat: number; lng: number }) {
       </div>
     </a>
 
-    <!-- Address -->
-    <div class="bg-white rounded-xl p-6 shadow-md">
-      <h3 class="font-semibold text-stone-800 mb-2">Our Address</h3>
-      <p class="text-stone-600 whitespace-pre-line">{{ address }}</p>
-    </div>
-
     <!-- Entrances -->
     <div class="bg-white rounded-xl p-6 shadow-md">
       <h3 class="font-semibold text-stone-800 mb-4">How to Get Here</h3>

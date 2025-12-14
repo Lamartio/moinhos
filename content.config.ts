@@ -12,5 +12,16 @@ export default defineContentConfig({
         date: z.string().optional(),
       }),
     }),
+    blog: defineCollection({
+      type: 'page',
+      source: 'blog/**',
+      schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        image: z.string().optional(),
+        date: z.string(),
+        category: z.string().optional(),
+      }),
+    }),
   },
 })
