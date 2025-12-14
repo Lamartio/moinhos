@@ -8,7 +8,7 @@ description: "We are looking for a volunteer\(s\) for the months of:"
 
 Date: 2016-01-25 21:43:38
 
-### [](/uploads/2016/01/Volunteers2015Compilation.jpg)
+### ![](/uploads/2016/01/Volunteers2015Compilation.jpg)
 We are looking for a volunteer\(s\) for the months of:
 ***April through September, 2016***
 In this year, we are looking for volunteer\(s\) with experience and/or interest-to-learn in the following:

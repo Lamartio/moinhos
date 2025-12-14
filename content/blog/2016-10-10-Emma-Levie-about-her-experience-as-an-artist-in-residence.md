@@ -38,6 +38,6 @@ What became most clear to me during my weeks at the Moinhos, is that I feel heal
 Every day something else would attract me to its beauty. One day it would be a leaf, the other day a plastic bottle with a bright yellow top in front of a concrete wall, and another day it would be a smiling woman with crooked teeth. 
 
  Being here has showed me again that beauty is always around, and that it's easier to find it when there is not too much distraction. I think that as an artist it is very important to remind myself, that in moments I don't find inspiration, all I have to do is change my focus, take a closer look, or widen my view.
-[](/uploads/2016/10/EmmaHaan.jpg)
+![](/uploads/2016/10/EmmaHaan.jpg)
 
 * *

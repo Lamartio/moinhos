@@ -46,4 +46,4 @@ call: 00351 232610586 or 00351 933956630
 We look forward to hearing from you!
 Rob van Deursen \(Saiwala Foundation\), Steven & Freya \(Moinhos do Dão\)
 
-[](/uploads/2014/02/Workshop-flyer-ENG\_web.jpg)
+![](/uploads/2014/02/Workshop-flyer-ENG\_web.jpg)

@@ -29,13 +29,6 @@ const formattedDate = computed(() => {
 
 <template>
   <div v-if="post">
-    <!-- Hero -->
-    <HeroSection
-      :title="post.title"
-      :subtitle="post.category"
-      :background-image="post.image"
-    />
-
     <!-- Content -->
     <article class="py-16 px-4">
       <div class="container mx-auto max-w-3xl">

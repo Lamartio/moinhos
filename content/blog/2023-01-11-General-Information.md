@@ -54,9 +54,9 @@ On the N25/IP5 between Mangualde and Viseu take the exit 21/N16 \(= Fagilde\). D
 
 Below are two maps. The first map is the **CORRECT MAP** to reach the Moinhos do Dão from Viseu, the largest nearby town:
 
-![map](/uploads/2017/03/CORRECT-Google-map-to-MdD.png)
+![](/uploads/2017/03/CORRECT-Google-map-to-MdD.png) 
 
 The second map, below, is an **INCORRECT MAP** that will often be given from Google Maps or other GPS services \(we are trying to correct this\).  This map will attempt to lead you to the other side of the Dão river, from us, and you will be stuck there, unable to reach us from that side.  **AVOID TAKING THIS ROUTE!!!**
 
-[](/uploads/2017/03/Incorrect-Google-map-to-MdD.png)
+![](/uploads/2017/03/Incorrect-Google-map-to-MdD.png)
 
