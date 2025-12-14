@@ -7,11 +7,6 @@ export const FARM_ADDRESS = `Moinhos Do Dao - Eco Quinta
 Dao Region
 Portugal`
 
-export const MAP_COORDINATES = {
-  lat: 40.6140419,
-  lng: -7.8440782
-}
-
 export const COORDINATES = {
   quinta: {
     lat: 40.6140419,

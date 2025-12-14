@@ -52,7 +52,7 @@ useSeoMeta({
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="font-medium">Languages:</span>
-                  <span>Portuguese, English</span>
+                  <span>English, German, Dutch, Portuguese</span>
                 </li>
               </ul>
             </div>

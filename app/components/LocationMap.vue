@@ -1,37 +1,44 @@
 <script setup lang="ts">
-import { MAP_COORDINATES } from '~/constants'
+import { COORDINATES } from '~/constants'
 
 const props = defineProps<{
   address: string
-  coordinates?: {
-    lat: number
-    lng: number
-  }
 }>()
 
-const coords = computed(() => props.coordinates || MAP_COORDINATES)
+const locations = [
+  {
+    name: 'Moinhos Do Dao',
+    description: 'Main entrance',
+    coords: COORDINATES.quinta
+  },
+  {
+    name: 'Entrance via Fagilde',
+    description: 'Northern access',
+    coords: COORDINATES.fagilde
+  },
+  {
+    name: 'Entrance via Tibaldinho',
+    description: 'Southern access',
+    coords: COORDINATES.tibaldinho
+  }
+]
 
-const googleMapsUrl = computed(() => {
-  return `https://www.google.com/maps/search/?api=1&query=${coords.value.lat},${coords.value.lng}`
-})
-
-const staticMapUrl = computed(() => {
-  // Using placeholder with coordinates text
-  return `https://placehold.co/600x300/166534/white?text=View+on+Google+Maps`
-})
+function getGoogleMapsUrl(coords: { lat: number; lng: number }) {
+  return `https://www.google.com/maps/search/?api=1&query=${coords.lat},${coords.lng}`
+}
 </script>
 
 <template>
   <div class="space-y-4">
-    <!-- Map Image -->
+    <!-- Main Location -->
     <a
-      :href="googleMapsUrl"
+      :href="getGoogleMapsUrl(COORDINATES.quinta)"
       target="_blank"
       rel="noopener noreferrer"
       class="block rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
     >
       <img
-        :src="staticMapUrl"
+        src="~/assets/maps.png"
         :alt="`Map showing ${address}`"
         class="w-full h-64 object-cover"
       />
@@ -44,6 +51,27 @@ const staticMapUrl = computed(() => {
     <div class="bg-white rounded-xl p-6 shadow-md">
       <h3 class="font-semibold text-stone-800 mb-2">Our Address</h3>
       <p class="text-stone-600 whitespace-pre-line">{{ address }}</p>
+    </div>
+
+    <!-- Entrances -->
+    <div class="bg-white rounded-xl p-6 shadow-md">
+      <h3 class="font-semibold text-stone-800 mb-4">How to Get Here</h3>
+      <div class="space-y-3">
+        <a
+          v-for="location in locations"
+          :key="location.name"
+          :href="getGoogleMapsUrl(location.coords)"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-between p-3 bg-stone-50 rounded-lg hover:bg-green-50 transition-colors group"
+        >
+          <div>
+            <p class="font-medium text-stone-800 group-hover:text-green-800">{{ location.name }}</p>
+            <p class="text-sm text-stone-500">{{ location.description }}</p>
+          </div>
+          <span class="text-green-700 text-sm font-medium">Open Map &rarr;</span>
+        </a>
+      </div>
     </div>
   </div>
 </template>
