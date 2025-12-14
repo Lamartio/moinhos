@@ -1,3 +1,9 @@
+---
+title: "Joshua Glass artist in residence September 2021"
+date: "2021-09-15"
+description: "Moinhos do Dão is excited to host Joshua in the artist in residence program. In his work the domains of art, social dynamics and nature intersect and this touch"
+---
+
 # Joshua Glass artist in residence September 2021
 
 Date: 2021-09-15 20:18:11

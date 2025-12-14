@@ -1,3 +1,9 @@
+---
+title: "Participating in Jardins Efémeros Art Festival Viseu"
+date: "2017-07-05"
+description: "Moinhos do Dão is participating in the Viseu art festival Jardims Efémeros with an excursion to Mosteiro de Santa Maria de Maceira Dão & Moinhos do Dão - Eco Qu"
+---
+
 # Participating in Jardins Efémeros - Art Festival Viseu
 
 Date: 2017-07-05 21:55:55

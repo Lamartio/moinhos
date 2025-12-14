@@ -1,3 +1,9 @@
+---
+title: "A week long nature pilgrimage in the Dão valley"
+date: "2020-02-24"
+description: "Hello friends of Moinhos do Dão,"
+---
+
 # A week long nature pilgrimage in the Dão valley.
 
 Date: 2020-02-24 12:59:53

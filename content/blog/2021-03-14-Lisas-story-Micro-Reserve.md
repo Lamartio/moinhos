@@ -1,3 +1,9 @@
+---
+title: "Lisas story Micro Reserve"
+date: "2021-03-14"
+description: "As part of my studies “International Forest Ecosystem Management” I spent three months at the Moinhos do Dão, focusing on the forest restoration work in the Mic"
+---
+
 # Lisa's story - Micro Reserve
 
 Date: 2021-03-14 16:37:12

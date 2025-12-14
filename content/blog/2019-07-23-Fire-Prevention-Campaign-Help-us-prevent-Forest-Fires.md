@@ -1,3 +1,9 @@
+---
+title: "Fire Prevention Campaign Help us prevent Forest Fires"
+date: "2019-07-23"
+description: "Zone specifications: "
+---
+
 # Fire Prevention Campaign - Help us prevent Forest Fires!
 
 Date: 2019-07-23 15:52:54

@@ -1,3 +1,9 @@
+---
+title: "A week long nature pilgrimage through the beautiful Dão valley from the source to the mouth of the river"
+date: "2020-02-24"
+description: "Hello friends of Moinhos do Dão,"
+---
+
 # A week long nature pilgrimage through the beautiful Dão valley from the source to the mouth of the river.
 
 Date: 2020-02-24 20:04:09

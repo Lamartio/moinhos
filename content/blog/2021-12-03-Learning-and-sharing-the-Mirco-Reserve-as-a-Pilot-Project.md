@@ -1,3 +1,9 @@
+---
+title: "Learning and sharing the Mirco Reserve as a Pilot Project"
+date: "2021-12-03"
+description: "Besides the ecosystem restauration goals for our slice of the Dão valley another goal is for our Micro Reserve to serve as a pilot project. A pilot project that"
+---
+
 # Learning and sharing: the Mirco Reserve as a Pilot Project
 
 Date: 2021-12-03 15:07:14

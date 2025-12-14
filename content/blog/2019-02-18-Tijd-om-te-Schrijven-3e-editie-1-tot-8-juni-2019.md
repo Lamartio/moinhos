@@ -1,3 +1,9 @@
+---
+title: "Tijd om te Schrijven 3e editie 1 tot 8 juni 2019"
+date: "2019-02-18"
+description: "\~ Inspirerende Schrijfweek in het paradijs \~"
+---
+
 # Tijd om te Schrijven \~ 3e editie \~ 1 tot 8 juni 2019
 
 Date: 2019-02-18 12:36:26

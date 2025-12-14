@@ -1,3 +1,9 @@
+---
+title: "Hosting Events and Activities"
+date: "2024-03-06"
+description: "Moinhos do Dão is a beautifully situated quinta that can be used for group events and activities. We have hosted events such as weddings, outdoor yoga workshops"
+---
+
 # Hosting Events and Activities
 
 Date: 2024-03-06 12:52:27

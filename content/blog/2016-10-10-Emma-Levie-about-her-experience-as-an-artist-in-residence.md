@@ -1,3 +1,9 @@
+---
+title: "Emma Levie about her experience as an artist in residence"
+date: "2016-10-10"
+description: "*If I had one sentence to describe what my residency at Moinhos do Dão has brought me it would be this one: 'Moinhos do Dão has awakened my senses'*"
+---
+
 # Emma Levie about her experience as an artist in residence.
 
 Date: 2016-10-10 21:17:14

@@ -71,10 +71,10 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
                 <h3 class="text-xl font-semibold text-stone-800 mb-2">
                   {{ post.title }}
                 </h3>
-                <p class="text-stone-600 text-sm mb-4 line-clamp-2">
+                <p class="text-stone-600 text-sm mb-3 line-clamp-2">
                   {{ post.description }}
                 </p>
-                <time class="text-stone-400 text-sm">
+                <time v-if="post.date" class="text-stone-400 text-sm">
                   {{ new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
                 </time>
               </div>

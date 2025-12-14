@@ -1,3 +1,9 @@
+---
+title: "Holidays at Moinhos do Dão"
+date: "2024-06-18"
+description: "Our holiday rental Casa Boa Vista has everything you need for a comfortable getaway in nature. It is bright and cozy and has all the facilities and privacy for "
+---
+
 # Holidays at Moinhos do Dão
 
 Date: 2024-06-18 14:54:04

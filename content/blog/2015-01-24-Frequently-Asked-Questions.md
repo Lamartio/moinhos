@@ -1,3 +1,9 @@
+---
+title: "Frequently Asked Questions"
+date: "2015-01-24"
+description: "**Moinhos do Dão – Eco Quinta** is part of the WWOOF Portugal network. If you are interested in volunteering your greatly appreciated energy and time, then we s"
+---
+
 # Frequently Asked Questions
 
 Date: 2015-01-24 20:03:59

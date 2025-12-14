@@ -1,3 +1,9 @@
+---
+title: "MdD Residency August 2015 Karen van de Vliet"
+date: "2015-08-29"
+description: "For the month of August in 2015, the MdD hosted Karen van de Vliet \([website](http://www.karenvandevliet.nl/)\) as Artist in Residence.  Below are images from "
+---
+
 # MdD Residency – August 2015: Karen van de Vliet
 
 Date: 2015-08-29 08:42:04

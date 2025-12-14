@@ -1,3 +1,9 @@
+---
+title: "HARVEST MOON Culinary Workshop Weekend"
+date: "2018-09-09"
+description: "Peppers, tomatoes and zucchinis in many different shapes and colors have absorbed the summer sun and are sweet and ripe, ready to be consumed or preserved. This"
+---
+
 # HARVEST MOON - Culinary Workshop Weekend
 
 Date: 2018-09-09 11:54:41

@@ -1,3 +1,9 @@
+---
+title: "MdD Residency September 2015 Jalinka Gressmann Beckey Kaye"
+date: "2021-09-14"
+description: "For the month of September of 2015, the MdD hoted **Jalinka Gressmann** \([website](http://www.jalinkagressmann.com/)\) , as well as **Beckey Kaye** \([website]"
+---
+
 # MdD Residency - September 2015: Jalinka Gressmann & Beckey Kaye
 
 Date: 2021-09-14 16:43:20
@@ -6,7 +12,7 @@ For the month of September of 2015, the MdD hoted **Jalinka Gressmann** \([websi
 
 Both artists worked on developing images and objects—as well as a relationship—to the environment of the Moinhos do Dão.  Each explored new techniques in materials use and reflected both on the Nature at the MdD \(and/or the Self as it exists in Nature or a natural environment\).
 
-[](/uploads/2014/11/2015-September-AiRs-Jalinka-Gresmann-and-Beckey-Kaye.jpg)
+[Jalinka](/uploads/2014/11/2015-September-AiRs-Jalinka-Gresmann-and-Beckey-Kaye.jpg)
 
 Their 1-month stays culminated in an Open Atelier Day on the MdD \(plus an Artist's Talk at the Viseu Polytechnical School\):
 

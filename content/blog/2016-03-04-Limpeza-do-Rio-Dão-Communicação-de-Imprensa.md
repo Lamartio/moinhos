@@ -1,3 +1,9 @@
+---
+title: "Limpeza do Rio Dão Communicação de Imprensa"
+date: "2016-03-04"
+description: "\[caption id="attachment\_666" align="alignnone" width="300"\][](/uploads/2016/03/JornaldC-LimpezaFev2016.jpg) Noticia no Jornal do Centro sobre a limpeza do Ri"
+---
+
 # Limpeza do Rio Dão Communicação de Imprensa
 
 Date: 2016-03-04 21:05:57

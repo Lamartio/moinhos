@@ -1,3 +1,9 @@
+---
+title: "Longer term Quinta Sitters for Summer Fall 2023"
+date: "2023-07-18"
+description: "The Moinhos do Dão - Eco Quinta \(MdD\) is immediately seeking to host longer-term volunteers during the months of August through October, of 2023.  We know thi"
+---
+
 # Long\(er\)-term Quinta Sitters for Summer-Fall, 2023
 
 Date: 2023-07-18 16:37:35

@@ -1,3 +1,9 @@
+---
+title: "Participating in the 15th edition of Moinhos Abertos April 15 and 16"
+date: "2023-04-10"
+description: "Thanks to the repair of the roof of our small mill building we can participate in the National Open Mill Weekend on April 15th and 16th and show the centerpiece"
+---
+
 # Participating in the 15th edition of ‘Moinhos Abertos’. April 15 and 16.
 
 Date: 2023-04-10 20:10:02

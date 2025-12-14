@@ -1,3 +1,9 @@
+---
+title: "Residents Curremt"
+date: "2017-05-20"
+description: "Marieke is going to make a book about a very personal experience which \(unfortunately\) also happens to be a very common experience nowadays. "
+---
+
 # Residents - Curremt
 
 Date: 2017-05-20 16:02:12

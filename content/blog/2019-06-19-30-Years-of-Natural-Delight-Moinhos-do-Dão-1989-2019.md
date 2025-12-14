@@ -1,3 +1,9 @@
+---
+title: "30 Years of Natural Delight Moinhos do Dão 1989 2019"
+date: "2019-06-19"
+description: "It was in the year 1989 that Ria van Dien \(Maria for the Portuguese\) first set foot on 'the Moinhos', then known as Moinhos da Costa, after the name of the ma"
+---
+
 # 30 Years of Natural Delight \~ Moinhos do Dão 1989 - 2019
 
 Date: 2019-06-19 20:58:35

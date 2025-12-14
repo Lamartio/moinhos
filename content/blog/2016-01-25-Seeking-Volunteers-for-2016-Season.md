@@ -1,3 +1,9 @@
+---
+title: "Seeking Volunteers for 2016 Season"
+date: "2016-01-25"
+description: "We are looking for a volunteer\(s\) for the months of:"
+---
+
 # Seeking Volunteers for 2016 Season
 
 Date: 2016-01-25 21:43:38

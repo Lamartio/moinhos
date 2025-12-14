@@ -1,3 +1,9 @@
+---
+title: "Ecological Gardening Workshop"
+date: "2014-11-18"
+description: "Ecological Gardening Workshop:  growing food the Permaculture way"
+---
+
 # Ecological Gardening Workshop
 
 Date: 2014-11-18 14:39:17

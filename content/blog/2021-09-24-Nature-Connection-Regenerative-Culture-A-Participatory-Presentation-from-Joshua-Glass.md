@@ -1,3 +1,9 @@
+---
+title: "Nature Connection Regenerative Culture A Participatory Presentation from Joshua Glass"
+date: "2021-09-24"
+description: "A moment of 'working out loud' where the artist in residence, Joshua Glass, will present his in-progress artistic research on the intersection of nature connect"
+---
+
 # Nature Connection & Regenerative Culture: A Participatory Presentation from Joshua Glass
 
 Date: 2021-09-24 14:46:49

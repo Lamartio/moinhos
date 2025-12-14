@@ -1,3 +1,9 @@
+---
+title: "Information about Volunteering"
+date: "2024-03-14"
+description: "People that come to the Moinhos do Dão to help as volunteers are considered "residents," a term that supports the idea that, while at the MdD, you are living, w"
+---
+
 # Information about Volunteering
 
 Date: 2024-03-14 20:51:30

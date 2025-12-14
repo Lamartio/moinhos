@@ -1,3 +1,9 @@
+---
+title: "Forestry Weeks at Moinhos do Dão from the 18th till the 30th of November"
+date: "2020-02-10"
+description: "Planting trees and seeds because the Dão valley and Mother Earth can use some extra help."
+---
+
 # Forestry Weeks at Moinhos do Dão, from the 18th till the 30th of November
 
 Date: 2020-02-10 18:23:16

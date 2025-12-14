@@ -1,3 +1,9 @@
+---
+title: "Event Hosting on hold"
+date: "2024-03-06"
+description: "Moinhos do Dão is a beautifully situated quinta that can be used for group events and activities. We have hosted events such as weddings, outdoor yoga workshops"
+---
+
 # Event Hosting on hold
 
 Date: 2024-03-06 12:45:43

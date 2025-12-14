@@ -1,3 +1,9 @@
+---
+title: "CuidaDão A new environmental initiative for the Dão valley"
+date: "2016-03-09"
+description: "When you live in a place like the Moinhos do Dão, where the river and woods are your daily world, you cannot just stand and watch idly by when you see the damag"
+---
+
 # CuidaDão - A new environmental initiative for the Dão valley.
 
 Date: 2016-03-09 12:37:48
