@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   },
 
   // If deploying to https://<username>.github.io/<repo-name>/
-  app: {
-    baseURL: '/moinhos/'
-  }
+  // app: {
+  //   baseURL: '/moinhos/'
+  // }
 })
