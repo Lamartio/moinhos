@@ -19,10 +19,10 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false
     }
-  }
+  },
 
   // If deploying to https://<username>.github.io/<repo-name>/
-  // app: {
-  //   baseURL: '/<repo-name>/'
-  // }
+  app: {
+    baseURL: '/moinhos/'
+  }
 })
