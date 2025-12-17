@@ -73,3 +73,16 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## GitHub Pages Deployment
+
+To enable GitHub Pages deployment:
+
+1. Go to your repo on GitHub → **Settings** → **Pages**
+2. Under "Build and deployment", select **GitHub Actions** as the source
+3. Push your changes to `main`
+
+**Notes:**
+- If your repo is `<username>.github.io`, you don't need to set `baseURL` in `nuxt.config.ts`
+- If it's `<username>.github.io/<repo-name>`, uncomment the `baseURL` config in `nuxt.config.ts`
+- The `github-pages` preset handles the `.nojekyll` file automatically

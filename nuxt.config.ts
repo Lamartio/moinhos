@@ -10,5 +10,19 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
 
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+
+  // Static site generation for GitHub Pages
+  ssr: true,
+  nitro: {
+    preset: 'github-pages',
+    prerender: {
+      failOnError: false
+    }
+  }
+
+  // If deploying to https://<username>.github.io/<repo-name>/
+  // app: {
+  //   baseURL: '/<repo-name>/'
+  // }
 })
