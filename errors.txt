@@ -1,0 +1,8 @@
+ℹ Nuxt Icon server bundle mode is set to local
+✔ Nuxt Icon discovered local-installed 1 collections: lucide
+app/components/ImageGallery.vue(93,19): error TS2532: Object is possibly 'undefined'.
+app/components/ImageGallery.vue(94,19): error TS2532: Object is possibly 'undefined'.
+app/components/ImageGallery.vue(98,16): error TS2532: Object is possibly 'undefined'.
+app/pages/boa-vista.vue(38,42): error TS2322: Type '"white"' is not assignable to type '"primary" | "secondary" | "success" | "info" | "warning" | "error" | "neutral" | undefined'.
+app/pages/index.vue(17,45): error TS2322: Type '"white"' is not assignable to type '"primary" | "secondary" | "success" | "info" | "warning" | "error" | "neutral" | undefined'.
+app/pages/index.vue(20,44): error TS2322: Type '"white"' is not assignable to type '"primary" | "secondary" | "success" | "info" | "warning" | "error" | "neutral" | undefined'.

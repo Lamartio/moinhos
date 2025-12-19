@@ -8,6 +8,11 @@ const props = defineProps<{
 
 const selectedIndex = ref<number | null>(null)
 
+const selectedImage = computed(() => {
+  if (selectedIndex.value === null) return null
+  return props.images[selectedIndex.value]
+})
+
 function openLightbox(index: number) {
   selectedIndex.value = index
 }
@@ -88,14 +93,14 @@ onUnmounted(() => {
         </button>
 
         <!-- Image -->
-        <div class="max-w-4xl max-h-[80vh] px-16">
+        <div v-if="selectedImage" class="max-w-4xl max-h-[80vh] px-16">
           <NuxtImg
-            :src="images[selectedIndex].src"
-            :alt="images[selectedIndex].alt"
+            :src="selectedImage.src"
+            :alt="selectedImage.alt"
             class="max-w-full max-h-[80vh] object-contain"
           />
           <p class="text-white text-center mt-4">
-            {{ images[selectedIndex].alt }}
+            {{ selectedImage.alt }}
           </p>
         </div>
 

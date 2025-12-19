@@ -35,7 +35,7 @@ const amenities = [
       subtitle="Your peaceful retreat in the heart of nature"
       background-image="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1600&h=900&fit=crop"
     >
-      <UButton href="#booking" size="lg" color="white" variant="solid">
+      <UButton href="#booking" size="lg" color="neutral" variant="solid">
         Book Your Stay
       </UButton>
     </HeroSection>

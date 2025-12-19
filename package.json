@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxi typecheck",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@nuxt/content": "3.9.0",
@@ -16,6 +18,7 @@
     "@nuxt/ui": "4.2.1",
     "eslint": "^9.0.0",
     "nuxt": "^4.2.2",
+    "nuxt-studio": "1.0.0-beta.1",
     "typescript": "^5.6.3",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3"

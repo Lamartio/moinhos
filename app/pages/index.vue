@@ -14,10 +14,10 @@ useSeoMeta({
       background-image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&h=900&fit=crop"
     >
       <div class="flex flex-wrap gap-4 justify-center">
-        <UButton to="/activities" size="lg" color="white" variant="solid">
+        <UButton to="/activities" size="lg" color="neutral" variant="solid">
           Explore Activities
         </UButton>
-        <UButton to="/boa-vista" size="lg" color="white" variant="outline">
+        <UButton to="/boa-vista" size="lg" color="neutral" variant="outline">
           Book Boa Vista Cottage
         </UButton>
       </div>

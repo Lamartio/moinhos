@@ -7,10 +7,17 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    'nuxt-studio'
   ],
 
   css: ['~/assets/css/main.css'],
+
+  vite: {
+    server: {
+      allowedHosts: ['devserver-main--ephemeral-cocada-5d81cd.netlify.app']
+    }
+  },
 
   // Static site generation for GitHub Pages
   ssr: true,

@@ -11,6 +11,13 @@
         "@playwright/mcp@latest"
       ],
       "env": {}
+    },
+    "studio Docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/nuxt-content/studio"
+      ]
     }
   }
 }
