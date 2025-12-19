@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
-    'nuxt-studio'
+    'nuxt-studio',
+    '@nuxtjs/mcp-toolkit'
   ],
 
   css: ['~/assets/css/main.css'],
@@ -19,17 +20,19 @@ export default defineNuxtConfig({
     }
   },
 
-  // Static site generation for GitHub Pages
+  // Netlify deployment with SSR (required for Nuxt Studio)
   ssr: true,
   nitro: {
-    preset: 'github-pages',
-    prerender: {
-      failOnError: false
-    }
+    preset: 'netlify'
   },
 
-  // If deploying to https://<username>.github.io/<repo-name>/
-  // app: {
-  //   baseURL: '/moinhos/'
-  // }
+  // Nuxt Studio configuration
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'Lamartio',
+      repo: 'moinhos',
+      branch: 'main'
+    }
+  }
 })

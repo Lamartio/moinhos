@@ -95,12 +95,12 @@ onUnmounted(() => {
         <!-- Image -->
         <div v-if="selectedImage" class="max-w-4xl max-h-[80vh] px-16">
           <NuxtImg
-            :src="selectedImage.src"
-            :alt="selectedImage.alt"
+            :src="selectedImage!.src"
+            :alt="selectedImage!.alt"
             class="max-w-full max-h-[80vh] object-contain"
           />
           <p class="text-white text-center mt-4">
-            {{ selectedImage.alt }}
+            {{ selectedImage!.alt }}
           </p>
         </div>
 
