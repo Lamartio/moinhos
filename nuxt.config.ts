@@ -16,7 +16,10 @@ export default defineNuxtConfig({
 
   vite: {
     server: {
-      allowedHosts: ['devserver-main--ephemeral-cocada-5d81cd.netlify.app']
+      allowedHosts: [
+        'ephemeral-cocada-5d81cd.netlify.app',
+        '.ephemeral-cocada-5d81cd.netlify.app'
+      ]
     }
   },
 
