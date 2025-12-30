@@ -23,16 +23,10 @@ const today = new Date().toISOString().split('T')[0]
 
 async function handleSubmit() {
   await submit({
-    name: form.name,
-    email: form.email,
-    phone: form.phone,
-    countryCode: form.countryCode,
+    ...form,
+    phoneFull: form.phone ? `${form.countryCode} ${form.phone}` : '',
     subject: `Booking Request: ${propertyName.value}`,
     propertyName: propertyName.value,
-    checkIn: form.checkIn,
-    checkOut: form.checkOut,
-    guests: form.guests,
-    message: form.message
   })
 }
 

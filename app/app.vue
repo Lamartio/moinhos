@@ -11,6 +11,7 @@
     <input type="email" name="email">
     <input type="tel" name="phone">
     <input type="text" name="countryCode">
+    <input type="tel" name="phoneFull">
     <input type="text" name="subject">
     <textarea name="message" />
   </form>
@@ -20,6 +21,7 @@
     <input type="email" name="email">
     <input type="tel" name="phone">
     <input type="text" name="countryCode">
+    <input type="tel" name="phoneFull">
     <input type="text" name="subject">
     <input type="text" name="propertyName">
     <input type="date" name="checkIn">

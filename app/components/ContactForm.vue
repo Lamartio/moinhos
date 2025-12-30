@@ -12,12 +12,9 @@ const form = reactive({
 
 async function handleSubmit() {
   await submit({
-    name: form.name,
-    email: form.email,
-    phone: form.phone,
-    countryCode: form.countryCode,
-    subject: form.subject || 'Contact from Website',
-    message: form.message
+    ...form,
+    phoneFull: form.phone ? `${form.countryCode} ${form.phone}` : '',
+    subject: form.subject || 'Contact from Website'
   })
 }
 
