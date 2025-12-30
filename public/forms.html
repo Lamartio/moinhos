@@ -1,0 +1,42 @@
+<!--
+  This file declares Netlify Forms for the SSR application.
+  Netlify parses this file at deploy time to detect form definitions.
+  The actual form submissions are handled by JavaScript in the Vue components.
+
+  Important: The "email" field name is used by Netlify to set the Reply-to
+  address on notification emails, allowing direct replies to form submitters.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Declarations</title>
+</head>
+<body>
+  <!-- Contact Form Declaration -->
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="bot-field" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="text" name="countryCode" />
+    <input type="text" name="subject" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <!-- Booking Form Declaration -->
+  <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="bot-field" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="text" name="countryCode" />
+    <input type="text" name="subject" />
+    <input type="text" name="propertyName" />
+    <input type="date" name="checkIn" />
+    <input type="date" name="checkOut" />
+    <input type="number" name="guests" />
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { EMAIL_PLACEHOLDER, FARM_ADDRESS } from '~/constants'
+import { FARM_ADDRESS } from '~/constants'
 
 useSeoMeta({
   title: 'Contact - Moinhos Do Dao',
@@ -26,7 +26,7 @@ useSeoMeta({
               Send Us a Message
             </h2>
             <div class="bg-default rounded-xl p-8 shadow-md">
-              <ContactForm :email="EMAIL_PLACEHOLDER" />
+              <ContactForm />
             </div>
           </div>
 
@@ -38,14 +38,8 @@ useSeoMeta({
             <LocationMap :address="FARM_ADDRESS" />
 
             <div class="mt-8 bg-default rounded-xl p-6 shadow-md">
-              <h3 class="font-semibold text-highlighted mb-4">Contact Information</h3>
+              <h3 class="font-semibold text-highlighted mb-4">Visit Information</h3>
               <ul class="space-y-3 text-toned">
-                <li class="flex items-start gap-3">
-                  <span class="font-medium">Email:</span>
-                  <a :href="`mailto:${EMAIL_PLACEHOLDER}`" class="text-green-700 hover:text-green-800">
-                    {{ EMAIL_PLACEHOLDER }}
-                  </a>
-                </li>
                 <li class="flex items-start gap-3">
                   <span class="font-medium">Best time to visit:</span>
                   <span>April - October</span>
@@ -53,6 +47,10 @@ useSeoMeta({
                 <li class="flex items-start gap-3">
                   <span class="font-medium">Languages:</span>
                   <span>English, German, Dutch, Portuguese</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="font-medium">Response time:</span>
+                  <span>Usually within 24 hours</span>
                 </li>
               </ul>
             </div>

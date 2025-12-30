@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { EMAIL_PLACEHOLDER } from '~/constants'
 </script>
 
 <template>
@@ -54,10 +53,11 @@ import { EMAIL_PLACEHOLDER } from '~/constants'
             </ul>
           </div>
           <div>
-            <h3 class="text-white font-semibold mb-3">Contact</h3>
-            <p class="text-sm">
-              Email: <a :href="`mailto:${EMAIL_PLACEHOLDER}`" class="hover:text-white transition-colors">{{ EMAIL_PLACEHOLDER }}</a>
-            </p>
+            <h3 class="text-white font-semibold mb-3">Get in Touch</h3>
+            <p class="text-sm mb-2">Have questions? We'd love to hear from you.</p>
+            <NuxtLink to="/contact" class="text-sm hover:text-white transition-colors underline">
+              Send us a message
+            </NuxtLink>
           </div>
         </div>
         <div class="border-t border-stone-700 mt-8 pt-4 text-center text-sm">

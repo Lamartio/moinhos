@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { EMAIL_PLACEHOLDER } from '~/constants'
-
 useSeoMeta({
   title: 'Boa Vista Cottage - Moinhos Do Dao',
   description: 'Stay at Boa Vista, our charming cottage with stunning views. Book your peaceful getaway at Moinhos Do Dao eco-farm.'
@@ -114,7 +112,7 @@ const amenities = [
           Book Your Stay
         </h2>
         <div class="bg-default rounded-xl p-8 shadow-lg">
-          <BookingForm property-name="Boa Vista Cottage" :email="EMAIL_PLACEHOLDER" />
+          <BookingForm property-name="Boa Vista Cottage" />
         </div>
       </div>
     </section>
