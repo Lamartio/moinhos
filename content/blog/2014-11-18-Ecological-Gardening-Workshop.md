@@ -39,9 +39,7 @@ Costs for a week: € 350, includes 7 nights lodging from the 4th till the 11th 
 
 \* Moinhos do Dão, is a former miller’s farm of 2 acres located on the banks of the Dão River. Moinhos do Dão welcomes guests, residents, volunteers and day visitors to observe and experience off-the-grid living in harmony with nature.
 
-For more information and/or to sign up:
-email: [moinhosdodao@hotmail.com](mailto:moinhosdodao@hotmail.com)
-call: 00351 232610586 or 00351 933956630
+For more information and/or to sign up, [contact us](https://moinhosdodao.com/contact).
 
 We look forward to hearing from you!
 Rob van Deursen \(Saiwala Foundation\), Steven & Freya \(Moinhos do Dão\)

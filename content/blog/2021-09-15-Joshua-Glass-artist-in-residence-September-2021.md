@@ -14,7 +14,7 @@ Moinhos do Dão is excited to host Joshua in the artist in residence program. In
 
 On Saturday, 25 Sept., in collaboration with the people and land of  Moinhos do Dão \~ Eco Quinta, Joshua will co-host a participatory moment to present his work.
 
-**To sign up and**** receive participation details ****email: info@moinhosdodao.org**
+**To sign up and receive participation details, [contact us](https://moinhosdodao.com/contact).**
 
 
 The work of Joshua Glass elaborates on the intersection of *performance art* + *social experimentation* + *nature connection*. He designs his offerings to be embodied so we can practice:

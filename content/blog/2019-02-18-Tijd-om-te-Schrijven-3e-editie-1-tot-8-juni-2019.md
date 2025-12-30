@@ -69,10 +69,6 @@ Kamperen: **€ 565,-**
 
 **Meer informatie \~**
 
-Voor praktische vragen; neem contact op met Freya op Moinhos do Dão.
+Voor praktische vragen; neem contact op met Freya op Moinhos do Dão via [ons contactformulier](https://moinhosdodao.com/contact).
 
-info@moinhosdodao.org \~ +351 933956630
-
-Voor programma inhoudelijke vragen; neem contact op met Mariette Wijne.
-
-info@mariettewijne.nl
+Voor programma inhoudelijke vragen; neem contact op met Mariette Wijne via [haar website](http://www.mariettewijne.nl).

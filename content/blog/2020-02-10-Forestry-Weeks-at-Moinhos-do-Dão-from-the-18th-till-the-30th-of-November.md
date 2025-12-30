@@ -19,7 +19,7 @@ Sounds like the right thing to do...right?
 
 You can come help for a day, a few days or a week if you want. The Moinhos has comfy places to stay, we’ll be preparing meals together and in the evening you can put your feet up and relax by the fire place. For those spending the night and staying more days there is a cost of € 10 per day incl. food. We’ll be working with a group of maximum 8 people.
 
-If you want to know more, or let us know you are interested in coming, please send us a message. info@moinhosdodao.org
+If you want to know more, or let us know you are interested in coming, please [send us a message](https://moinhosdodao.com/contact).
 
 Also please share with people you know who might be interested!
 

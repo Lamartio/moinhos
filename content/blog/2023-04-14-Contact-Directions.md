@@ -18,19 +18,7 @@ Tibaldinho, Mangualde 3530-027
 
 Portugal
 
-**Landline:**    +351 232 610 586
-
-*Chamada para a Rede Fixo Nacional*
-
-**MdD Mobile**:  +351 933 956 630
-
-*Chamada para a Rede Movel Nacional*
-
-**Steven’s Mobile: ** +351 934 890 679
-
-*Chamada para a Rede Movel Nacional*
-
-**EMAIL:** [info@moinhosdodao.org](mailto:info@moinhosdodao.org)
+**Contact us:** [Send us a message](https://moinhosdodao.com/contact)
 
 ***ACTUAL ADDRESS:***
 

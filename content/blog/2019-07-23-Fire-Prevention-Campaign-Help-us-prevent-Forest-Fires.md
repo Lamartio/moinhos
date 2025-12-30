@@ -59,7 +59,7 @@ Please help us reach our goal to make the Moinhos more safe so nature can keep 
 
 **DONATION OPTIONS: **
 1. Online donation Platform - [GoFundMe](https://www.gofundme.com/mddfirepreventioncampaign)
-2. Per PayPall account - info@moinhosdodao.org  
+2. Per PayPal - [Contact us](https://moinhosdodao.com/contact) for details  
 3. Per Bank transfer - Bank Account number  IBAN PT50 0018 000039157465001 36,  Moinhos do Dão Act Turisticas
 
 **ALL LEVELS OF DONATIONS FROM € 5 to € 3000 :-\) ARE APPRECIATED! **

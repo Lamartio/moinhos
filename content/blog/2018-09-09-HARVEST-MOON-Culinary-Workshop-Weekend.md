@@ -52,6 +52,4 @@ Individual accommodation € 40
 Shared accommodation € 30
 Camping € 20
 
-Interested?
-Email: [info@moinhosdodao.org](mailto:info@moinhosdodao.org)
-or call +351 933956630
+Interested? [Contact us](https://moinhosdodao.com/contact)
