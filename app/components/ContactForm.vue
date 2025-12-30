@@ -46,7 +46,7 @@ function resetForm() {
     </div>
 
     <!-- Form -->
-    <form v-else class="space-y-6" method="POST" netlify @submit.prevent="handleSubmit">
+    <form v-else name="contact"  class="space-y-6" method="POST" netlify @submit.prevent="handleSubmit">
       <input type="hidden" name="form-name" value="contact">
 
       <UFormField label="Your Name" name="name" required>
