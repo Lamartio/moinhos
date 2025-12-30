@@ -13,7 +13,7 @@ useSeoMeta({
     <HeroSection
       title="Contact Us"
       subtitle="We'd love to hear from you"
-      background-image="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600&h=900&fit=crop"
+      background-image="/uploads/Facade-Millers-House.jpg"
     />
 
     <!-- Contact Section -->

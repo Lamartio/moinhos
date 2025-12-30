@@ -8,7 +8,7 @@ const props = defineProps<{
 const locations = [
   {
     name: 'Moinhos Do Dao',
-    description: 'Main entrance',
+    description: 'Our location',
     coords: COORDINATES.quinta
   },
   {
@@ -38,7 +38,7 @@ function getGoogleMapsUrl(coords: { lat: number; lng: number }) {
       class="block rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
     >
       <img
-        src="~/assets/maps.png"
+        src="/maps.png"
         :alt="`Map showing ${address}`"
         class="w-full h-64 object-cover"
       />

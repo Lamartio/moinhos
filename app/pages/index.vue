@@ -11,7 +11,7 @@ useSeoMeta({
     <HeroSection
         title="Moinhos Do Dao"
         subtitle="Eco Quinta - Experience authentic Portuguese farm life"
-        background-image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&h=900&fit=crop"
+        background-image="/uploads/DroneOverviewTerrain.jpg"
     >
       <div class="flex flex-wrap gap-4 justify-center">
         <UButton to="/activities" size="lg" variant="solid">
@@ -35,21 +35,21 @@ useSeoMeta({
               title="Farm Activities"
               description="Join our workshops, nature walks, and hands-on farming experiences. Connect with nature and learn traditional practices."
               to="/activities"
-              image="https://images.unsplash.com/photo-1500076656116-558758c991c1?w=600&h=400&fit=crop"
+              image="/uploads/Horta-August-2014_2.jpg"
           />
 
           <HighlightCard
               title="Boa Vista Cottage"
               description="Stay in our charming cottage with stunning views. Perfect for a peaceful getaway surrounded by nature."
               to="/boa-vista"
-              image="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=400&fit=crop"
+              image="/uploads/IMG_2259.jpg"
           />
 
           <HighlightCard
               title="Visit Us"
               description="Located in the beautiful Dao region of Portugal. Come experience the tranquility of rural life."
               to="/contact"
-              image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&h=400&fit=crop"
+              image="/uploads/RuaPrincipal.jpg"
           />
         </div>
       </div>

@@ -19,7 +19,7 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
     <HeroSection
       title="Farm Activities"
       subtitle="Experience authentic rural life through our hands-on activities"
-      background-image="https://images.unsplash.com/photo-1500076656116-558758c991c1?w=1600&h=900&fit=crop"
+      background-image="/uploads/Pumpkins2016.jpg"
     />
 
     <!-- Activities Grid -->
@@ -32,7 +32,7 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
             :title="activity.title"
             :description="activity.description"
             :to="activity.path"
-            :image="activity.image?.trim() || 'https://images.unsplash.com/photo-1500076656116-558758c991c1?w=600&h=400&fit=crop'"
+            :image="activity.image?.trim() || '/uploads/Pumpkins2016.jpg'"
           />
         </div>
 
