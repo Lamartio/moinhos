@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('contact')
+const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('contact2')
 
 const form = reactive({
   name: '',
@@ -43,8 +43,8 @@ function resetForm() {
     </div>
 
     <!-- Form -->
-    <form v-else name="contact"  class="space-y-6" method="POST" netlify @submit.prevent="handleSubmit">
-      <input type="hidden" name="form-name" value="contact">
+    <form v-else name="contact2" class="space-y-6" method="POST" netlify @submit.prevent="handleSubmit">
+      <input type="hidden" name="form-name" value="contact2">
 
       <UFormField label="Your Name" name="name" required>
         <UInput

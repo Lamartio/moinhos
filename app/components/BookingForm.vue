@@ -3,7 +3,7 @@ const props = defineProps<{
   propertyName?: string
 }>()
 
-const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('booking')
+const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('booking2')
 
 const form = reactive({
   name: '',
@@ -60,8 +60,8 @@ function resetForm() {
     </div>
 
     <!-- Form -->
-    <form v-else name="booking" class="space-y-6" method="POST" netlify @submit.prevent="handleSubmit">
-      <input type="hidden" name="form-name" value="booking">
+    <form v-else name="booking2" class="space-y-6" method="POST" netlify @submit.prevent="handleSubmit">
+      <input type="hidden" name="form-name" value="booking2">
       <input type="hidden" name="propertyName" :value="propertyName">
       <input type="hidden" name="subject" :value="`Booking Request: ${propertyName}`">
 
