@@ -3,23 +3,24 @@ export function useNetlifyForm(formName: string) {
   const isSuccess = ref(false)
   const error = ref<string | null>(null)
 
-  async function submit(form: HTMLFormElement) {
+  async function submit(data: Record<string, string>) {
     isSubmitting.value = true
     error.value = null
     isSuccess.value = false
 
     try {
-      const formData = new FormData(form)
+      // Add form-name to the data
+      const formData = {
+        'form-name': formName,
+        ...data
+      }
 
       // Log form data for debugging
       console.log('=== Netlify Form Submission ===')
       console.log('Form name:', formName)
-      console.log('Form data:')
-      for (const [key, value] of formData.entries()) {
-        console.log(`  ${key}: ${value}`)
-      }
+      console.log('Form data:', formData)
 
-      const body = new URLSearchParams(formData as unknown as Record<string, string>).toString()
+      const body = new URLSearchParams(formData).toString()
       console.log('Encoded body:', body)
 
       const response = await fetch('/', {

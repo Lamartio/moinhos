@@ -1,14 +1,34 @@
 <script setup lang="ts">
-const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('contact2')
+const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('contact3')
 
-// Track phone fields for hidden inputs (FormData needs name attributes)
-const phone = ref('')
+// Form state
+const name = ref('')
+const email = ref('')
+const phoneDigits = ref('')
 const countryCode = ref('')
-const phoneFull = computed(() => phone.value ? `${countryCode.value} ${phone.value}` : '')
+const subject = ref('')
+const message = ref('')
 
-async function handleSubmit(event: Event) {
-  const form = event.target as HTMLFormElement
-  await submit(form)
+// Combined phone number
+const phone = computed(() => phoneDigits.value ? `${countryCode.value} ${phoneDigits.value}` : '')
+
+async function handleSubmit() {
+  await submit({
+    name: name.value,
+    email: email.value,
+    phone: phone.value,
+    subject: subject.value,
+    message: message.value
+  })
+}
+
+function resetForm() {
+  name.value = ''
+  email.value = ''
+  phoneDigits.value = ''
+  subject.value = ''
+  message.value = ''
+  reset()
 }
 </script>
 
@@ -21,22 +41,16 @@ async function handleSubmit(event: Event) {
       </div>
       <h3 class="text-xl font-semibold text-highlighted mb-2">Message Sent!</h3>
       <p class="text-toned mb-6">Thank you for reaching out. We'll get back to you soon.</p>
-      <UButton variant="outline" @click="reset">
+      <UButton variant="outline" @click="resetForm">
         Send Another Message
       </UButton>
     </div>
 
     <!-- Form -->
-    <form v-else name="contact2" class="space-y-6" method="POST" data-netlify="true" @submit.prevent="handleSubmit">
-      <input type="hidden" name="form-name" value="contact2">
-      <!-- Hidden fields for phone data (PhoneInput doesn't have name attrs) -->
-      <input type="hidden" name="phone" :value="phone">
-      <input type="hidden" name="countryCode" :value="countryCode">
-      <input type="hidden" name="phoneFull" :value="phoneFull">
-
-      <UFormField label="Your Name" name="name" required>
+    <form v-else class="space-y-6" @submit.prevent="handleSubmit">
+      <UFormField label="Your Name" required>
         <UInput
-          name="name"
+          v-model="name"
           placeholder="Enter your name"
           size="lg"
           class="w-full"
@@ -44,9 +58,9 @@ async function handleSubmit(event: Event) {
         />
       </UFormField>
 
-      <UFormField label="Your Email" name="email" required>
+      <UFormField label="Your Email" required>
         <UInput
-          name="email"
+          v-model="email"
           type="email"
           placeholder="Enter your email"
           size="lg"
@@ -55,16 +69,16 @@ async function handleSubmit(event: Event) {
         />
       </UFormField>
 
-      <UFormField label="Phone Number" name="phone">
+      <UFormField label="Phone Number">
         <PhoneInput
-          v-model="phone"
+          v-model="phoneDigits"
           v-model:country-code="countryCode"
         />
       </UFormField>
 
-      <UFormField label="Subject" name="subject" required>
+      <UFormField label="Subject" required>
         <UInput
-          name="subject"
+          v-model="subject"
           placeholder="What is this about?"
           size="lg"
           class="w-full"
@@ -72,9 +86,9 @@ async function handleSubmit(event: Event) {
         />
       </UFormField>
 
-      <UFormField label="Message" name="message" required>
+      <UFormField label="Message" required>
         <UTextarea
-          name="message"
+          v-model="message"
           placeholder="Write your message here..."
           :rows="5"
           size="lg"
