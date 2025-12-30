@@ -1,7 +1,7 @@
 ---
 title: Nature Walks
 description: Explore the beautiful trails around our farm and discover local flora and fauna.
-image: /images/nature-walk.jpg
+image: /uploads/WaterfallSpringCOLOR16Medium.jpg
 date: "2024-01-15"
 ---
 

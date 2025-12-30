@@ -1,7 +1,7 @@
 ---
 title: Farm Experience Day
 description: Spend a day helping with daily farm tasks and connecting with rural life.
-image: /images/farm-experience.jpg
+image: /uploads/View-on-houses.jpg
 date: "2024-02-01"
 ---
 

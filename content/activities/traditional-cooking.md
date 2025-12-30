@@ -1,7 +1,7 @@
 ---
 title: Traditional Cooking Workshop
 description: Learn to cook authentic Portuguese dishes using ingredients from our farm.
-image: /images/cooking-workshop.jpg
+image: /uploads/Mill-in-function.jpg
 date: "2024-01-20"
 ---
 
