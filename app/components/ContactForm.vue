@@ -74,12 +74,13 @@ function resetForm() {
         />
       </UFormField>
 
-      <UFormField label="Subject" name="subject">
+      <UFormField label="Subject" name="subject" required>
         <UInput
           v-model="form.subject"
           placeholder="What is this about?"
           size="lg"
           class="w-full"
+          required
         />
       </UFormField>
 
