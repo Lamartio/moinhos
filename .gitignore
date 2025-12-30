@@ -26,3 +26,4 @@ logs
 .playwright-mcp/*
 old_site/*
 /public/uploads/next/
+/.netlify/

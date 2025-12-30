@@ -2,9 +2,5 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 
 [build]
-  command = "bun run generate"
+  command = "bun run build"
   publish = ".output/public"
-
-# Allow remote images through Netlify Image CDN
-[images]
-  remote_images = ["https://images.unsplash.com/.*"]
