@@ -5,40 +5,19 @@ const props = defineProps<{
 
 const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('booking2')
 
-const form = reactive({
-  name: '',
-  email: '',
-  phone: '',
-  countryCode: '',
-  checkIn: '',
-  checkOut: '',
-  guests: 2,
-  message: ''
-})
-
 const propertyName = computed(() => props.propertyName || 'Boa Vista Cottage')
+
+// Track phone fields for hidden inputs (FormData needs name attributes)
+const phone = ref('')
+const countryCode = ref('')
+const phoneFull = computed(() => phone.value ? `${countryCode.value} ${phone.value}` : '')
 
 // Set minimum date to today
 const today = new Date().toISOString().split('T')[0]
 
-async function handleSubmit() {
-  await submit({
-    ...form,
-    phoneFull: form.phone ? `${form.countryCode} ${form.phone}` : '',
-    subject: `Booking Request: ${propertyName.value}`,
-    propertyName: propertyName.value,
-  })
-}
-
-function resetForm() {
-  form.name = ''
-  form.email = ''
-  form.phone = ''
-  form.checkIn = ''
-  form.checkOut = ''
-  form.guests = 2
-  form.message = ''
-  reset()
+async function handleSubmit(event: Event) {
+  const form = event.target as HTMLFormElement
+  await submit(form)
 }
 </script>
 
@@ -54,7 +33,7 @@ function resetForm() {
         Thank you for your interest in {{ propertyName }}.<br>
         We'll review your request and get back to you shortly.
       </p>
-      <UButton variant="outline" @click="resetForm">
+      <UButton variant="outline" @click="reset">
         Make Another Booking
       </UButton>
     </div>
@@ -64,11 +43,15 @@ function resetForm() {
       <input type="hidden" name="form-name" value="booking2">
       <input type="hidden" name="propertyName" :value="propertyName">
       <input type="hidden" name="subject" :value="`Booking Request: ${propertyName}`">
+      <!-- Hidden fields for phone data (PhoneInput doesn't have name attrs) -->
+      <input type="hidden" name="phone" :value="phone">
+      <input type="hidden" name="countryCode" :value="countryCode">
+      <input type="hidden" name="phoneFull" :value="phoneFull">
 
       <div class="grid md:grid-cols-2 gap-6">
         <UFormField label="Your Name" name="name" required>
           <UInput
-            v-model="form.name"
+            name="name"
             placeholder="Enter your name"
             size="lg"
             class="w-full"
@@ -78,7 +61,7 @@ function resetForm() {
 
         <UFormField label="Your Email" name="email" required>
           <UInput
-            v-model="form.email"
+            name="email"
             type="email"
             placeholder="Enter your email"
             size="lg"
@@ -91,20 +74,20 @@ function resetForm() {
       <div class="grid md:grid-cols-2 gap-6">
         <UFormField label="Phone Number" name="phone">
           <PhoneInput
-            v-model="form.phone"
-            v-model:country-code="form.countryCode"
+            v-model="phone"
+            v-model:country-code="countryCode"
           />
         </UFormField>
 
         <UFormField label="Number of Guests" name="guests" required>
           <UInput
-            v-model.number="form.guests"
+            name="guests"
             type="number"
             :min="1"
-            :max="2"
+            :max="10"
+            value="2"
             size="lg"
             class="w-full"
-
           />
         </UFormField>
       </div>
@@ -112,7 +95,7 @@ function resetForm() {
       <div class="grid md:grid-cols-2 gap-6">
         <UFormField label="Check-in Date" name="checkIn" required>
           <UInput
-            v-model="form.checkIn"
+            name="checkIn"
             type="date"
             :min="today"
             size="lg"
@@ -123,9 +106,9 @@ function resetForm() {
 
         <UFormField label="Check-out Date" name="checkOut" required>
           <UInput
-            v-model="form.checkOut"
+            name="checkOut"
             type="date"
-            :min="form.checkIn || today"
+            :min="today"
             size="lg"
             class="w-full"
             required
@@ -135,7 +118,7 @@ function resetForm() {
 
       <UFormField label="Additional Notes" name="message">
         <UTextarea
-          v-model="form.message"
+          name="message"
           placeholder="Any special requests or questions?"
           :rows="3"
           size="lg"

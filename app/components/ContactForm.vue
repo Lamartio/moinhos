@@ -1,30 +1,14 @@
 <script setup lang="ts">
 const { isSubmitting, isSuccess, error, submit, reset } = useNetlifyForm('contact2')
 
-const form = reactive({
-  name: '',
-  email: '',
-  phone: '',
-  countryCode: '',
-  subject: '',
-  message: ''
-})
+// Track phone fields for hidden inputs (FormData needs name attributes)
+const phone = ref('')
+const countryCode = ref('')
+const phoneFull = computed(() => phone.value ? `${countryCode.value} ${phone.value}` : '')
 
-async function handleSubmit() {
-  await submit({
-    ...form,
-    phoneFull: form.phone ? `${form.countryCode} ${form.phone}` : '',
-    subject: form.subject || 'Contact from Website'
-  })
-}
-
-function resetForm() {
-  form.name = ''
-  form.email = ''
-  form.phone = ''
-  form.subject = ''
-  form.message = ''
-  reset()
+async function handleSubmit(event: Event) {
+  const form = event.target as HTMLFormElement
+  await submit(form)
 }
 </script>
 
@@ -37,7 +21,7 @@ function resetForm() {
       </div>
       <h3 class="text-xl font-semibold text-highlighted mb-2">Message Sent!</h3>
       <p class="text-toned mb-6">Thank you for reaching out. We'll get back to you soon.</p>
-      <UButton variant="outline" @click="resetForm">
+      <UButton variant="outline" @click="reset">
         Send Another Message
       </UButton>
     </div>
@@ -45,10 +29,14 @@ function resetForm() {
     <!-- Form -->
     <form v-else name="contact2" class="space-y-6" method="POST" data-netlify="true" @submit.prevent="handleSubmit">
       <input type="hidden" name="form-name" value="contact2">
+      <!-- Hidden fields for phone data (PhoneInput doesn't have name attrs) -->
+      <input type="hidden" name="phone" :value="phone">
+      <input type="hidden" name="countryCode" :value="countryCode">
+      <input type="hidden" name="phoneFull" :value="phoneFull">
 
       <UFormField label="Your Name" name="name" required>
         <UInput
-          v-model="form.name"
+          name="name"
           placeholder="Enter your name"
           size="lg"
           class="w-full"
@@ -58,7 +46,7 @@ function resetForm() {
 
       <UFormField label="Your Email" name="email" required>
         <UInput
-          v-model="form.email"
+          name="email"
           type="email"
           placeholder="Enter your email"
           size="lg"
@@ -69,14 +57,14 @@ function resetForm() {
 
       <UFormField label="Phone Number" name="phone">
         <PhoneInput
-          v-model="form.phone"
-          v-model:country-code="form.countryCode"
+          v-model="phone"
+          v-model:country-code="countryCode"
         />
       </UFormField>
 
       <UFormField label="Subject" name="subject" required>
         <UInput
-          v-model="form.subject"
+          name="subject"
           placeholder="What is this about?"
           size="lg"
           class="w-full"
@@ -86,7 +74,7 @@ function resetForm() {
 
       <UFormField label="Message" name="message" required>
         <UTextarea
-          v-model="form.message"
+          name="message"
           placeholder="Write your message here..."
           :rows="5"
           size="lg"
