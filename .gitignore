@@ -27,3 +27,4 @@ logs
 old_site/*
 /public/uploads/next/
 /.netlify/
+/old_site/

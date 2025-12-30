@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
-    'nuxt-studio',
-    '@nuxtjs/mcp-toolkit'
+    // 'nuxt-studio',
+    // '@nuxtjs/mcp-toolkit'
   ],
 
   css: ['~/assets/css/main.css'],
@@ -30,12 +30,12 @@ export default defineNuxtConfig({
   },
 
   // Nuxt Studio configuration
-  studio: {
-    repository: {
-      provider: 'github',
-      owner: 'Lamartio',
-      repo: 'moinhos',
-      branch: 'main'
-    }
-  }
+  // studio: {
+  //   repository: {
+  //     provider: 'github',
+  //     owner: 'Lamartio',
+  //     repo: 'moinhos',
+  //     branch: 'main'
+  //   }
+  // }
 })

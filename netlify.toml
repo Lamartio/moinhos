@@ -1,6 +1,2 @@
 # Netlify Configuration
 # https://docs.netlify.com/configure-builds/file-based-configuration/
-
-[build]
-  command = "bun run build"
-  publish = ".output/public"
