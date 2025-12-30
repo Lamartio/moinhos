@@ -60,7 +60,7 @@ function resetForm() {
     </div>
 
     <!-- Form -->
-    <form v-else name="booking2" class="space-y-6" method="POST" netlify @submit.prevent="handleSubmit">
+    <form v-else name="booking2" class="space-y-6" method="POST" data-netlify="true" @submit.prevent="handleSubmit">
       <input type="hidden" name="form-name" value="booking2">
       <input type="hidden" name="propertyName" :value="propertyName">
       <input type="hidden" name="subject" :value="`Booking Request: ${propertyName}`">

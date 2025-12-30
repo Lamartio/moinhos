@@ -6,7 +6,7 @@
   </NuxtLayout>
 
   <!-- Hidden Netlify Form Declarations (for SSR form detection) -->
-  <form name="contact2" method="POST" netlify hidden>
+  <form name="contact2" method="POST" data-netlify="true" hidden>
     <input type="text" name="name">
     <input type="email" name="email">
     <input type="tel" name="phone">
@@ -16,7 +16,7 @@
     <textarea name="message" />
   </form>
 
-  <form name="booking2" method="POST" netlify hidden>
+  <form name="booking2" method="POST" data-netlify="true" hidden>
     <input type="text" name="name">
     <input type="email" name="email">
     <input type="tel" name="phone">
