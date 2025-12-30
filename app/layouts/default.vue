@@ -3,7 +3,7 @@ import { EMAIL_PLACEHOLDER } from '~/constants'
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col bg-stone-50">
+  <div class="min-h-screen flex flex-col bg-muted">
     <!-- Header -->
     <header class="bg-green-900 text-white shadow-lg">
       <div class="container mx-auto px-4">

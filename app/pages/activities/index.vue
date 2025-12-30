@@ -23,7 +23,7 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
     />
 
     <!-- Activities Grid -->
-    <section class="py-16 px-4 bg-stone-50">
+    <section class="py-16 px-4 bg-muted">
       <div class="container mx-auto">
         <div v-if="activities?.length" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <HighlightCard
@@ -37,7 +37,7 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
         </div>
 
         <div v-else class="text-center py-12">
-          <p class="text-stone-600 text-lg">
+          <p class="text-toned text-lg">
             Activities coming soon! Check back later for our upcoming events and experiences.
           </p>
         </div>
@@ -47,10 +47,10 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
     <!-- Blog Section -->
     <section class="py-16 px-4">
       <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold text-stone-800 mb-4 text-center">
+        <h2 class="text-3xl font-bold text-highlighted mb-4 text-center">
           Stories from the Quinta
         </h2>
-        <p class="text-stone-600 text-center mb-12 max-w-2xl mx-auto">
+        <p class="text-toned text-center mb-12 max-w-2xl mx-auto">
           Read about life at Moinhos do Dão, our conservation efforts, and experiences from guests and volunteers.
         </p>
 
@@ -58,23 +58,23 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
           <article
             v-for="post in blogPosts"
             :key="post.stem"
-            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            class="bg-default rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
           >
             <NuxtLink :to="post.path" class="flex flex-col md:flex-row">
               <div class="p-6 flex flex-col justify-center">
                 <span
                   v-if="post.category"
-                  class="inline-block px-3 py-1 text-xs font-medium text-green-800 bg-green-100 rounded-full mb-3 w-fit"
+                  class="inline-block px-3 py-1 text-xs font-medium text-success bg-success/10 rounded-full mb-3 w-fit"
                 >
                   {{ post.category }}
                 </span>
-                <h3 class="text-xl font-semibold text-stone-800 mb-2">
+                <h3 class="text-xl font-semibold text-highlighted mb-2">
                   {{ post.title }}
                 </h3>
-                <p class="text-stone-600 text-sm mb-3 line-clamp-2">
+                <p class="text-toned text-sm mb-3 line-clamp-2">
                   {{ post.description }}
                 </p>
-                <time v-if="post.date" class="text-stone-400 text-sm">
+                <time v-if="post.date" class="text-dimmed text-sm">
                   {{ new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
                 </time>
               </div>
@@ -83,7 +83,7 @@ const { data: blogPosts } = await useAsyncData('blog', () =>
         </div>
 
         <div v-else class="text-center py-12">
-          <p class="text-stone-600 text-lg">
+          <p class="text-toned text-lg">
             Blog posts coming soon!
           </p>
         </div>

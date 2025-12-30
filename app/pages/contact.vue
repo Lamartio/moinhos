@@ -17,29 +17,29 @@ useSeoMeta({
     />
 
     <!-- Contact Section -->
-    <section class="py-16 px-4 bg-stone-50">
+    <section class="py-16 px-4 bg-muted">
       <div class="container mx-auto max-w-6xl">
         <div class="grid lg:grid-cols-2 gap-12">
           <!-- Contact Form -->
           <div>
-            <h2 class="text-2xl font-bold text-stone-800 mb-6">
+            <h2 class="text-2xl font-bold text-highlighted mb-6">
               Send Us a Message
             </h2>
-            <div class="bg-white rounded-xl p-8 shadow-md">
+            <div class="bg-default rounded-xl p-8 shadow-md">
               <ContactForm :email="EMAIL_PLACEHOLDER" />
             </div>
           </div>
 
           <!-- Location & Info -->
           <div>
-            <h2 class="text-2xl font-bold text-stone-800 mb-6">
+            <h2 class="text-2xl font-bold text-highlighted mb-6">
               Find Us
             </h2>
             <LocationMap :address="FARM_ADDRESS" />
 
-            <div class="mt-8 bg-white rounded-xl p-6 shadow-md">
-              <h3 class="font-semibold text-stone-800 mb-4">Contact Information</h3>
-              <ul class="space-y-3 text-stone-600">
+            <div class="mt-8 bg-default rounded-xl p-6 shadow-md">
+              <h3 class="font-semibold text-highlighted mb-4">Contact Information</h3>
+              <ul class="space-y-3 text-toned">
                 <li class="flex items-start gap-3">
                   <span class="font-medium">Email:</span>
                   <a :href="`mailto:${EMAIL_PLACEHOLDER}`" class="text-green-700 hover:text-green-800">

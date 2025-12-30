@@ -48,8 +48,8 @@ function getGoogleMapsUrl(coords: { lat: number; lng: number }) {
     </a>
 
     <!-- Entrances -->
-    <div class="bg-white rounded-xl p-6 shadow-md">
-      <h3 class="font-semibold text-stone-800 mb-4">How to Get Here</h3>
+    <div class="bg-default rounded-xl p-6 shadow-md">
+      <h3 class="font-semibold text-highlighted mb-4">How to Get Here</h3>
       <div class="space-y-3">
         <a
           v-for="location in locations"
@@ -57,13 +57,13 @@ function getGoogleMapsUrl(coords: { lat: number; lng: number }) {
           :href="getGoogleMapsUrl(location.coords)"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center justify-between p-3 bg-stone-50 rounded-lg hover:bg-green-50 transition-colors group"
+          class="flex items-center justify-between p-3 bg-muted rounded-lg hover:bg-primary/10 transition-colors group"
         >
           <div>
-            <p class="font-medium text-stone-800 group-hover:text-green-800">{{ location.name }}</p>
-            <p class="text-sm text-stone-500">{{ location.description }}</p>
+            <p class="font-medium text-highlighted group-hover:text-primary">{{ location.name }}</p>
+            <p class="text-sm text-muted">{{ location.description }}</p>
           </div>
-          <span class="text-green-700 text-sm font-medium">Open Map &rarr;</span>
+          <span class="text-primary text-sm font-medium">Open Map &rarr;</span>
         </a>
       </div>
     </div>

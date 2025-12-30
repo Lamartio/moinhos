@@ -14,19 +14,19 @@ useSeoMeta({
       background-image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&h=900&fit=crop"
     >
       <div class="flex flex-wrap gap-4 justify-center">
-        <UButton to="/activities" size="lg" color="neutral" variant="solid">
+        <UButton to="/activities" size="lg" color="neutral"  variant="solid">
           Explore Activities
         </UButton>
-        <UButton to="/boa-vista" size="lg" color="neutral" variant="outline">
+        <UButton to="/boa-vista" size="lg"  color="neutral" variant="solid">
           Book Boa Vista Cottage
         </UButton>
       </div>
     </HeroSection>
 
     <!-- Highlights Section -->
-    <section class="py-16 px-4 bg-stone-100">
+    <section class="py-16 px-4 bg-elevated">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-center text-stone-800 mb-12">
+        <h2 class="text-3xl font-bold text-center text-highlighted mb-12">
           Discover Our Farm
         </h2>
 
@@ -58,10 +58,10 @@ useSeoMeta({
     <!-- About Section -->
     <section class="py-16 px-4">
       <div class="container mx-auto max-w-4xl text-center">
-        <h2 class="text-3xl font-bold text-stone-800 mb-6">
+        <h2 class="text-3xl font-bold text-highlighted mb-6">
           Welcome to Our Eco Farm
         </h2>
-        <p class="text-lg text-stone-600 mb-8">
+        <p class="text-lg text-toned mb-8">
           Moinhos Do Dao is a family-run eco-farm nestled in the heart of Portugal's Dao wine region.
           We offer authentic rural experiences, from hands-on farming activities to peaceful stays
           in our traditional cottage. Whether you're looking for adventure or relaxation, our farm

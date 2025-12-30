@@ -41,9 +41,9 @@ const amenities = [
     </HeroSection>
 
     <!-- Gallery Section -->
-    <section class="py-16 px-4 bg-stone-50">
+    <section class="py-16 px-4 bg-muted">
       <div class="container mx-auto max-w-5xl">
-        <h2 class="text-3xl font-bold text-stone-800 mb-8 text-center">
+        <h2 class="text-3xl font-bold text-highlighted mb-8 text-center">
           Explore the Cottage
         </h2>
         <ImageGallery :images="cottageImages" />
@@ -55,7 +55,7 @@ const amenities = [
       <div class="container mx-auto max-w-4xl">
         <div class="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 class="text-2xl font-bold text-stone-800 mb-6">
+            <h2 class="text-2xl font-bold text-highlighted mb-6">
               About Boa Vista
             </h2>
             <div class="prose prose-stone">
@@ -79,23 +79,23 @@ const amenities = [
           </div>
 
           <div>
-            <h2 class="text-2xl font-bold text-stone-800 mb-6">
+            <h2 class="text-2xl font-bold text-highlighted mb-6">
               Amenities
             </h2>
             <ul class="grid grid-cols-2 gap-3">
               <li
                 v-for="amenity in amenities"
                 :key="amenity"
-                class="flex items-center gap-2 text-stone-600"
+                class="flex items-center gap-2 text-toned"
               >
                 <span class="text-green-600">&#10003;</span>
                 {{ amenity }}
               </li>
             </ul>
 
-            <div class="mt-8 p-6 bg-green-50 rounded-xl">
-              <h3 class="font-semibold text-stone-800 mb-2">Good to Know</h3>
-              <ul class="space-y-2 text-stone-600 text-sm">
+            <div class="mt-8 p-6 bg-primary/10 rounded-xl">
+              <h3 class="font-semibold text-highlighted mb-2">Good to Know</h3>
+              <ul class="space-y-2 text-toned text-sm">
                 <li><strong>Check-in:</strong> 3:00 PM</li>
                 <li><strong>Check-out:</strong> 11:00 AM</li>
                 <li><strong>Minimum stay:</strong> 2 nights</li>
@@ -108,12 +108,12 @@ const amenities = [
     </section>
 
     <!-- Booking Section -->
-    <section id="booking" class="py-16 px-4 bg-stone-100">
+    <section id="booking" class="py-16 px-4 bg-elevated">
       <div class="container mx-auto max-w-2xl">
-        <h2 class="text-3xl font-bold text-stone-800 mb-8 text-center">
+        <h2 class="text-3xl font-bold text-highlighted mb-8 text-center">
           Book Your Stay
         </h2>
-        <div class="bg-white rounded-xl p-8 shadow-lg">
+        <div class="bg-default rounded-xl p-8 shadow-lg">
           <BookingForm property-name="Boa Vista Cottage" :email="EMAIL_PLACEHOLDER" />
         </div>
       </div>
