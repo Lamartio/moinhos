@@ -61,7 +61,7 @@ onMounted(() => {
       :items="countryOptions"
       :filter-fields="['label', 'dial', 'name']"
       :search-input="{ placeholder: 'Search...' }"
-      class="w-32 shrink-0"
+      class="w-28 shrink-0"
       size="lg"
     />
     <UInput

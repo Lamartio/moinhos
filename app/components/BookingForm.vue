@@ -102,12 +102,26 @@ function resetForm() {
         </UFormField>
       </div>
 
-      <UFormField label="Phone Number" name="phone">
-        <PhoneInput
-          v-model="form.phone"
-          v-model:country-code="form.countryCode"
-        />
-      </UFormField>
+      <div class="grid md:grid-cols-2 gap-6">
+        <UFormField label="Phone Number" name="phone">
+          <PhoneInput
+            v-model="form.phone"
+            v-model:country-code="form.countryCode"
+          />
+        </UFormField>
+
+        <UFormField label="Number of Guests" name="guests" required>
+          <UInput
+            v-model.number="form.guests"
+            type="number"
+            :min="1"
+            :max="2"
+            size="lg"
+            class="w-full"
+
+          />
+        </UFormField>
+      </div>
 
       <div class="grid md:grid-cols-2 gap-6">
         <UFormField label="Check-in Date" name="checkIn" required>
@@ -133,17 +147,6 @@ function resetForm() {
         </UFormField>
       </div>
 
-      <UFormField label="Number of Guests" name="guests">
-        <UInput
-          v-model.number="form.guests"
-          type="number"
-          :min="1"
-          :max="6"
-          size="lg"
-          class="w-full"
-        />
-      </UFormField>
-
       <UFormField label="Additional Notes" name="message">
         <UTextarea
           v-model="form.message"
@@ -167,9 +170,6 @@ function resetForm() {
         {{ isSubmitting ? 'Submitting...' : 'Request Booking' }}
       </UButton>
 
-      <p class="text-sm text-muted text-center">
-        Your booking request will be sent directly to our team.
-      </p>
     </form>
   </div>
 </template>
