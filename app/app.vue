@@ -1,11 +1,12 @@
+<script setup lang="ts">
+</script>
 <template>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 
   <!-- Hidden Netlify Form Declarations (for SSR form detection) -->
-  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
-    <input type="text" name="bot-field">
+  <form name="contact" method="POST" netlify hidden>
     <input type="text" name="name">
     <input type="email" name="email">
     <input type="tel" name="phone">
@@ -14,8 +15,7 @@
     <textarea name="message" />
   </form>
 
-  <form name="booking" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
-    <input type="text" name="bot-field">
+  <form name="booking" method="POST" netlify hidden>
     <input type="text" name="name">
     <input type="email" name="email">
     <input type="tel" name="phone">
