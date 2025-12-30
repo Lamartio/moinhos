@@ -46,7 +46,7 @@ function resetForm() {
     </div>
 
     <!-- Form -->
-    <form v-else class="space-y-6" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+    <form v-else class="space-y-6" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
       <!-- Hidden fields for Netlify -->
       <input type="hidden" name="form-name" value="contact">
       <!-- Honeypot field for spam protection -->
