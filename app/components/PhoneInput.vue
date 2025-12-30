@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { SelectMenuItem } from '@nuxt/ui'
 import { countryCodes, type CountryCode } from '~/composables/useCountryCodes'
 
 const props = defineProps<{
@@ -14,8 +15,16 @@ const emit = defineEmits<{
 
 const { defaultCountry } = useCountryCodes()
 
-const selectedCountry = ref<CountryCode>(
-  countryCodes.find(c => c.dial === props.countryCode) || defaultCountry
+const selectedCountry = ref<SelectMenuItem & { country: CountryCode }>(
+  (() => {
+    const country = countryCodes.find(c => c.dial === props.countryCode) || defaultCountry
+    return {
+      label: `${country.flag} ${country.dial}`,
+      dial: country.dial,
+      name: country.name,
+      country
+    }
+  })()
 )
 
 const phoneNumber = ref(props.modelValue || '')
@@ -23,13 +32,16 @@ const phoneNumber = ref(props.modelValue || '')
 const countryOptions = computed(() =>
   countryCodes.map(country => ({
     label: `${country.flag} ${country.dial}`,
-    value: country.dial,
+    dial: country.dial,
+    name: country.name,
     country
   }))
 )
 
-watch(selectedCountry, (country) => {
-  emit('update:countryCode', country.dial)
+watch(selectedCountry, (item) => {
+  if (item?.country) {
+    emit('update:countryCode', item.country.dial)
+  }
 })
 
 watch(phoneNumber, (value) => {
@@ -38,7 +50,7 @@ watch(phoneNumber, (value) => {
 
 // Initialize
 onMounted(() => {
-  emit('update:countryCode', selectedCountry.value.dial)
+  emit('update:countryCode', selectedCountry.value.country.dial)
 })
 </script>
 
@@ -47,26 +59,11 @@ onMounted(() => {
     <USelectMenu
       v-model="selectedCountry"
       :items="countryOptions"
-      value-key="value"
+      :filter-fields="['label', 'dial', 'name']"
+      :search-input="{ placeholder: 'Search...' }"
       class="w-32 shrink-0"
       size="lg"
-    >
-      <template #default>
-        <UButton
-          color="neutral"
-          variant="outline"
-          class="w-full justify-between"
-          size="lg"
-        >
-          <span>{{ selectedCountry.flag }} {{ selectedCountry.dial }}</span>
-          <UIcon name="i-lucide-chevron-down" class="size-4" />
-        </UButton>
-      </template>
-      <template #item="{ item }">
-        <span>{{ item.country.flag }} {{ item.country.dial }}</span>
-        <span class="text-muted text-sm ml-2">{{ item.country.name }}</span>
-      </template>
-    </USelectMenu>
+    />
     <UInput
       v-model="phoneNumber"
       type="tel"

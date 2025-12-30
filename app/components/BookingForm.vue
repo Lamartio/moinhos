@@ -102,7 +102,7 @@ function resetForm() {
         </UFormField>
       </div>
 
-      <UFormField label="Phone Number (optional)" name="phone">
+      <UFormField label="Phone Number" name="phone">
         <PhoneInput
           v-model="form.phone"
           v-model:country-code="form.countryCode"
