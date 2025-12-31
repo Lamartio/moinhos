@@ -23,7 +23,8 @@ export function useNetlifyForm(formName: string) {
       const body = new URLSearchParams(formData).toString()
       console.log('Encoded body:', body)
 
-      const response = await fetch('/', {
+      // POST to static file, not SSR route - SSR endpoints don't work with Netlify Forms
+      const response = await fetch('/forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body
