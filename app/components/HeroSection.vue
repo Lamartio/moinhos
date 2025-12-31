@@ -8,14 +8,12 @@ defineProps<{
 
 <template>
   <section
-    class="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white"
-    :style="backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}"
-    :class="[
-      backgroundImage ? 'bg-cover bg-center' : 'bg-green-800'
-    ]"
+      class="relative h-[70vh] min-h-125 flex items-center justify-center text-white"
+      :style="backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}"
+      :class="[   backgroundImage ? 'bg-cover bg-center' : 'bg-green-800']"
   >
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/40" />
+    <div class="absolute inset-0 bg-black/40"/>
 
     <!-- Content -->
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -26,7 +24,7 @@ defineProps<{
         {{ subtitle }}
       </p>
       <div class="mt-8">
-        <slot />
+        <slot/>
       </div>
     </div>
   </section>

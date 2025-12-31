@@ -19,6 +19,8 @@ defineProps<{
         :src="image"
         :alt="title"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        sizes="sm:100vw md:33vw"
+        loading="lazy"
       />
     </div>
     <div v-else class="h-48 bg-primary/10 flex items-center justify-center">
@@ -46,6 +48,8 @@ defineProps<{
         :src="image"
         :alt="title"
         class="w-full h-full object-cover"
+        sizes="sm:100vw md:33vw"
+        loading="lazy"
       />
     </div>
     <div v-else class="h-48 bg-primary/10 flex items-center justify-center">

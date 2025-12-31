@@ -37,10 +37,12 @@ function getGoogleMapsUrl(coords: { lat: number; lng: number }) {
       rel="noopener noreferrer"
       class="block rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
     >
-      <img
+      <NuxtImg
         src="/maps.png"
         :alt="`Map showing ${address}`"
         class="w-full h-64 object-cover"
+        sizes="sm:100vw md:50vw"
+        loading="lazy"
       />
       <div class="bg-green-800 text-white py-3 px-4 text-center">
         <span class="font-medium">Open in Google Maps</span>

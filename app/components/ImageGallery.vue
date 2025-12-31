@@ -64,6 +64,8 @@ onUnmounted(() => {
           :src="image.src"
           :alt="image.alt"
           class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          sizes="sm:50vw md:33vw"
+          loading="lazy"
         />
       </button>
     </div>
@@ -98,6 +100,7 @@ onUnmounted(() => {
             :src="selectedImage!.src"
             :alt="selectedImage!.alt"
             class="max-w-full max-h-[80vh] object-contain"
+            sizes="100vw"
           />
           <p class="text-white text-center mt-4">
             {{ selectedImage!.alt }}
